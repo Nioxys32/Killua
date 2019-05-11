@@ -6,6 +6,7 @@ bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
   bot.user.setActivity("HxH!");
 });
+  bot.login(process.env.token);
 
 bot.on("message", async message =>{
   if(message.author.bot) return;
